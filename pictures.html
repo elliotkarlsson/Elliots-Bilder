@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliots Bilder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="thirdparty/splide.min.js"></script>
+    <link rel="stylesheet" href="thirdparty/splide-default.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navlist">
+            <li><a class="navlink first" href="./">Startsida</a></li>
+            <li><a class="navlink active" href="pictures.html">Bilder</a></li>
+            <li><a class="navlink last" href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="splide" aria-label="Bilder">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img class="picture" src="pictures/picture1.jpg"> 
+                    </li>
+                    <li class="splide__slide">
+                        <img class="picture" src="pictures/picture2.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="picture" src="pictures/picture3.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="picture" src="pictures/picture4.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="picture" src="pictures/picture5.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="picture" src="pictures/picture6.jpg">
+                    </li>
+                </ul>
+            </div>
+            <div class="splide__progress">
+                <div class="splide__progress__bar">
+                </div>
+          </div>
+        </section>
+    </main>
+    <script>
+        new Splide('.splide', {
+            direction: 'ttb',
+            height: '40rem',
+            wheel: true,
+            autoplay: true,
+            type: 'loop',
+            pauseOnHover: false
+        }).mount();
+    </script>
+</body>
+
+</html>

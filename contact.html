@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliots Bilder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav>
+        <ul class="navlist">
+            <li><a class="navlink first" href="./">Startsida</a></li>
+            <li><a class="navlink" href="pictures.html">Bilder</a></li>
+            <li><a class="navlink last active" href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+
+    
+    <main>
+        <h1>Fyll i detta formulär för att kontakta mig!</h1>
+        <p>Kanske förslag på nya bilder 😀</p>
+        <form action="mailto:recipient@example.com" method="get" enctype="text/plain">
+            
+            <input type="hidden" name="subject" value="Kontakta Elliots Bilder"><br>
+            Din E-post:<br>
+            <input type="email" name="email" placeholder="Din E-post"><br>
+            Meddelande:<br>
+            <textarea name="body" rows="5" cols="30" placeholder="Ditt Meddelande"></textarea><br>
+            <input type="submit" value="Skicka">
+          </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+
+body{
+    margin: 0;
+    background-color: #1f2126;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+*{
+    font-family: inherit;
+}
+
+.navlist{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    padding-bottom: 0;
+    
+}
+
+nav{
+    border-bottom: 1px solid white;
+}
+
+.navlink{
+    padding: 1rem;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.navlink.first{
+    border-top-left-radius:4px;
+}
+
+.navlink.last{
+    border-top-right-radius:4px;
+}
+
+.navlink:hover{
+    text-decoration: underline;
+}
+
+.active{
+    background-color: lightskyblue;
+}
+
+.picture{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
